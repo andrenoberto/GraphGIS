@@ -5,7 +5,7 @@ const joi = require('joi');
 module.exports = {
     schema: {
         // Describe the attributes with joi here
-        coor: joi.array().items({
+        coords: joi.array().items({
             lat: joi.string().required(),
             long: joi.string().required()
         }),
