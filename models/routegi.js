@@ -8,6 +8,12 @@ module.exports = {
         coor: joi.array().items({
             lat: joi.string().required(),
             long: joi.string().required()
+        }),
+        data: joi.array().items({
+            name: joi.string().required(),
+            highway: joi.string(),
+            geometryType: joi.string(),
+            velocity: joi.string()
         })
     },
     forClient(obj) {
