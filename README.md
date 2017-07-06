@@ -1,2 +1,9 @@
-# GraphGIS
-GraphGIS - A service made for ArangoDB
+# G2IS
+
+Graph GIS
+
+# License
+
+Copyright (c) 2017 Andre Noberto
+
+License: UERN

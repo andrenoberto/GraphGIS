@@ -1,0 +1,16 @@
+{
+    "name": "G2IS",
+    "version": "0.0.0",
+    "description": "Graph GIS",
+    "engines": {
+        "arangodb": "^3.0.0"
+    },
+    "author": "Andre Noberto",
+    "license": "UERN",
+    "main": "main.js",
+    "scripts": {
+        "setup": "scripts/setup.js",
+        "teardown": "scripts/teardown.js"
+    },
+    "tests": "test/**/*.js"
+}
