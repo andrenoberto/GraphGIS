@@ -1,6 +1,6 @@
 # G2IS
 
-Graph GIS - A service made for using with ArangoDB
+Graph GIS - A service made to be used with ArangoDB
 
 # License
 
