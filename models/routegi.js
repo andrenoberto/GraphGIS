@@ -6,15 +6,17 @@ module.exports = {
     schema: {
         // Describe the attributes with joi here
         coords: joi.array().items({
-            lat: joi.string().required(),
-            long: joi.string().required()
+            lat: joi.number().required(),
+            lng: joi.number().required(),
+            alt: joi.number.default(0).optional()
         }),
         data: joi.array().items({
             name: joi.string().required(),
-            highway: joi.string(),
-            geometryType: joi.string(),
-            velocity: joi.string()
-        })
+            highway: joi.string().required(),
+            geometryType: joi.string().required(),
+            speed: joi.string().optional()
+        }),
+        dataSrc: joi.object().required()
     },
     forClient(obj) {
         // Implement outgoing transformations here
