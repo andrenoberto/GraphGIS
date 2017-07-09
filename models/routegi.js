@@ -8,7 +8,7 @@ module.exports = {
         coords: joi.array().items({
             lat: joi.number().required(),
             lng: joi.number().required(),
-            alt: joi.number.default(0).optional()
+            alt: joi.number().default(0).optional()
         }),
         data: joi.array().items({
             name: joi.string().required(),
