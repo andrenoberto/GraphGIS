@@ -9,14 +9,14 @@ module.exports = {
             lat: joi.number().required(),
             lng: joi.number().required(),
             alt: joi.number().default(0).optional()
-        }),
+        }).required(),
         data: joi.array().items({
             name: joi.string().required(),
             highway: joi.string().required(),
             geometryType: joi.string().required(),
             avgSpeed: joi.string().optional()
-        }),
-        dataSrc: joi.object().required()
+        }).required(),
+        dataSrc: joi.object().optional()
     },
     forClient(obj) {
         // Implement outgoing transformations here
