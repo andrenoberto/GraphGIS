@@ -14,7 +14,7 @@ module.exports = {
             name: joi.string().required(),
             highway: joi.string().required(),
             geometryType: joi.string().required(),
-            speed: joi.string().optional()
+            avgSpeed: joi.string().optional()
         }),
         dataSrc: joi.object().required()
     },
