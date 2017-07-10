@@ -10,12 +10,12 @@ module.exports = {
             lng: joi.number().required(),
             alt: joi.number().default(0).optional()
         }).required(),
-        data: joi.object.keys({
+        data: {
             name: joi.string().required(),
             highway: joi.string().required(),
             geometryType: joi.string().required(),
             avgSpeed: joi.string().optional()
-        }).required(),
+        },
         dataSrc: joi.object().optional()
     },
     forClient(obj) {
