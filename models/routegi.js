@@ -10,7 +10,7 @@ module.exports = {
             lng: joi.number().required(),
             alt: joi.number().default(0).optional()
         }).required(),
-        data: joi.array().items({
+        data: joi.items({
             name: joi.string().required(),
             highway: joi.string().required(),
             geometryType: joi.string().required(),
